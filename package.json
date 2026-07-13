@@ -1,0 +1,18 @@
+{
+  "name": "skomda-digital-platform",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+"scripts": {
+    "dev": "concurrently -n API,WEB -c blue,green \"bun run dev:api\" \"bun run dev:web\"",
+    "dev:api": "bun --cwd apps/api dev",
+    "dev:web": "bun --cwd apps/web dev",
+    "db:generate": "bun --cwd apps/api db:generate",
+    "db:migrate": "bun --cwd apps/api db:migrate"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
