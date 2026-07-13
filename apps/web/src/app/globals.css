@@ -1,6 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-skomda-red: #e9272e;
+  --color-skomda-dark: #111111;
+}
 
 :root {
   color-scheme: light;
