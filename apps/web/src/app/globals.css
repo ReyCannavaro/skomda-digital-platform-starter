@@ -2,5 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: light; }
-body { margin: 0; background: #fff; color: #111; }
+:root {
+  color-scheme: light;
+  --skomda-gradient-main: linear-gradient(134deg, #e4252c 7.4%, #b8292d 85.42%);
+  --skomda-gradient-pill: linear-gradient(166deg, #e4252c 3.87%, #b8292d 93.81%);
+  --skomda-gradient-dot: linear-gradient(158deg, #e4252c 14.63%, #b8292d 97.48%);
+  --skomda-gradient-tall: linear-gradient(180deg, #e4252c 0%, #b8292d 100%);
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #111;
+}
